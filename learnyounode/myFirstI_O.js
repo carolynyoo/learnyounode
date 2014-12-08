@@ -1,0 +1,6 @@
+// the full path to file will be 1st command line argument
+
+var fs = require ('fs');
+var str=fs.readFileSync(process.argv[2]).toString();
+var arr=str.split('\n');
+console.log(arr.length-1);
